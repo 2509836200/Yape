@@ -1,0 +1,32 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "2C3F9D0EBF0054CD90375AF23887714ADE131507",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "5c255d4e-55f4-4a5c-94cd-e67eceea7237++8686" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "2C3F9D0EBF0054CD90375AF23887714ADE131507" : 0,
+    "5c255d4e-55f4-4a5c-94cd-e67eceea7237++8686" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "DF7B35DE-AA01-466B-90E9-879DCBBF1C77",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "2C3F9D0EBF0054CD90375AF23887714ADE131507" : "Yape\/",
+    "5c255d4e-55f4-4a5c-94cd-e67eceea7237++8686" : "MFB\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "MFB",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "MFB.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/2509836200\/Yape",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "2C3F9D0EBF0054CD90375AF23887714ADE131507"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/172.16.89.5\/svn\/app-manfubao",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "5c255d4e-55f4-4a5c-94cd-e67eceea7237++8686"
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+//
+//  MFB-Prefix.pch
+//  MFB
+//
+//  Created by llc on 15/8/3.
+//  Copyright (c) 2015年 xinpingTech. All rights reserved.
+//
+#ifdef __OBJC__
+#ifndef MFB_MFB_Prefix_pch
+#define MFB_MFB_Prefix_pch
+
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import "AdaptInterface.h"
+#import "BaseViewController.h"
+#import "LoginViewController.h"
+#import "AFNetworking.h"
+#import "IQKeyboardManager.h"
+#import "MJExtension.h"
+#import "MJRefresh.h"
+#import "HttpManager.h"
+#import "SVProgressHUD.h"
+#import "UINavigationController+FDFullscreenPopGesture.h"
+
+#import "SecurityUtil.h"
+#import "GTMBase64.h"
+
+#import "NSString+Extend.h"
+
+
+// 标准系统状态栏高度
+#define APP_STATUSBAR_HEIGHT [UIApplication sharedApplication].statusBarFrame.size.height
+// 标准系统状态栏高度
+#define SYS_STATUSBAR_HEIGHT                20
+// 热点栏高度
+#define HOTSPOT_STATUSBAR_HEIGHT            20
+#define IS_HOTSPOT_CONNECTED     (APP_STATUSBAR_HEIGHT==(SYS_STATUSBAR_HEIGHT+HOTSPOT_STATUSBAR_HEIGHT)?YES:NO)
+
+#define IOS7_OR_LATER	( [[[UIDevice currentDevice] systemVersion] compare:@"7.0"] != NSOrderedAscending )
+#define IOS8_OR_LATER	( [[[UIDevice currentDevice] systemVersion] compare:@"8.0"] != NSOrderedAscending )
+
+#define currentViewHeight [UIScreen mainScreen].bounds.size.height
+#define currentViewWidth [UIScreen mainScreen].bounds.size.width
+//数字和字母(身份证)
+#define ALPHANUM @"Xx0123456789"
+#define iphone6Width 375.f
+#define iphone6Height 667.f
+
+#define iosVersion [[[UIDevice currentDevice] systemVersion] floatValue]
+
+#define  colorWithRGB(r,g,b) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:1.0]
+#define  colorWithHexString(a) [AdaptInterface colorWithHexString1:a]
+//字符串不为空
+#define IS_NOT_EMPTY(string) (string && ![[string stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]] isEqualToString:@""]&&![string isKindOfClass:[NSNull class]])
+
+#define iPhone4 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 960), [[UIScreen mainScreen] currentMode].size) : NO)
+
+#define iPhone5 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 1136), [[UIScreen mainScreen] currentMode].size) : NO)
+
+#define iPhone6 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(750, 1334), [[UIScreen mainScreen] currentMode].size) : NO)
+
+#define iPhone6p ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1242, 2208), [[UIScreen mainScreen] currentMode].size) : NO)
+
+//项目访问路径
+
+
+//#define kRequestIP @"http://172.8.1.160:8080/mobile"
+
+
+//#define kRequestIP @"https://test.mandianfu.com.cn/mobile"
+//#define kRequestIP @"https://m1.mandianfu.com.cn/mobile"
+
+#define kRequestIP @"https://m.mandianfu.com.cn/mobile"
+
+//#ifdef DEBUG
+//#define kRequestIP @"https://m1.mandianfu.com.cn/mobile"
+//#else
+//#define kRequestIP @"https://m1.mandianfu.com.cn/mobile"
+//#endif
+
+//邀请投资访问路径
+#define kInviteIP  @"https://h.mandianfu.com.cn/register/"
+
+//支付请求路径
+#define kPayRequestIP @"http://test.mandianfu.com.cn/mobile/post.html"
+//#define kPayRequestIP  @"http://m1.mandianfu.com.cn:181/post.html"
+//#define kPayRequestIP @"http://h.mandianfu.com.cn/post.html"
+
+#import "NJKWebViewProgress.h"
+#import "NJKWebViewProgressView.h"
+
+#import "NSDate+InternetDateTime.h"
+
+#endif
+#endif
