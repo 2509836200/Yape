@@ -15,7 +15,7 @@
 #import "FriendController.h"
 #import "MyController.h"
 #import "Harpy.h"
-
+#import "GroupChatController.h"
 @interface MainViewController ()
 {
     UIImageView *_tabBarView;
@@ -242,7 +242,11 @@
     UINavigationController *nav3 =[[UINavigationController alloc] initWithRootViewController:myAssetsVC];
     nav3.delegate = self;
     [self addChildViewController:nav3];
-    
+   
+    GroupChatController *groupVC =[[GroupChatController alloc] init];
+    UINavigationController *nav4 =[[UINavigationController alloc] initWithRootViewController:groupVC];
+    nav3.delegate = self;
+    [self addChildViewController:nav4];
     // 4.初始化执行第一个控制器
     [self selectedControllerAtIndex:0];
     [_dockView setSelectedIndex:0];

@@ -5,7 +5,7 @@
 //  Created by user on 14-7-31.
 //  Copyright (c) 2014年 user. All rights reserved.
 //
-#define KDockItemCount 3
+#define KDockItemCount 4
 #import "Dock.h"
 #import "DockItem.h"
 
@@ -31,7 +31,7 @@
         [self addDockItemWithIcon:@"main_select1" withSelect:@"main_select" withTitle:@"Yape" withMark:1];
         [self addDockItemWithIcon:@"main_product1" withSelect:@"main_product" withTitle:@"好友" withMark:2];
         [self addDockItemWithIcon:@"main_mine1" withSelect:@"main_mine" withTitle:@"用户中心" withMark:3];
-
+        [self addDockItemWithIcon:@"main_mine1" withSelect:@"main_mine" withTitle:@"群聊" withMark:4];
     }
     return self;
 }
@@ -46,7 +46,7 @@
     // 2.设置边框
     //[self adjustDockItemFrame];
 
-    int dockItemWidth = self.frame.size.width /3;
+    int dockItemWidth = self.frame.size.width /4;
     int dockItemHeight = self.frame.size.height;
     button.frame = CGRectMake((mark-1) * dockItemWidth, 0, dockItemWidth, dockItemHeight);
     

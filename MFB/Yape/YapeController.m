@@ -7,7 +7,7 @@
 //
 
 #import "YapeController.h"
-
+#import "RegisterViewController.h"
 @interface YapeController ()
 
 @end
@@ -19,9 +19,17 @@
     // Do any additional setup after loading the view.
     self.title = @"Yape";
     self.view.backgroundColor =[UIColor greenColor];
+    UIButton *button =[UIButton buttonWithType:UIButtonTypeCustom];
+    button.frame =CGRectMake(100, 200, 100, 100);
+    button.backgroundColor =[UIColor redColor];
+    [button addTarget:self action:@selector(aa) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:button];
     
 }
-
+-(void)aa{
+    RegisterViewController *regist=[[RegisterViewController alloc]init];
+    [self.navigationController pushViewController:regist animated:YES];
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

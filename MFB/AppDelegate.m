@@ -21,9 +21,9 @@
 
 #import "UMSocialWechatHandler.h"
 #import "UMSocialQQHandler.h"
-
+#import "FriendController.h"
 #import "WebViewController.h"
-#import "LoginViewController.h"
+#import "RegisterViewController.h"
 #import "FMDBHandle.h"
 #import "Harpy.h"
 
@@ -99,7 +99,6 @@
     }
      */
     
-    
     NSString *key = (NSString *)kCFBundleVersionKey;
     //新版本号
     NSString *version = [NSBundle mainBundle].infoDictionary[key];
@@ -108,7 +107,7 @@
     guideCtrl = [[GuideViewController alloc] init];
     if ([version isEqualToString:oldVersion])
     {
-        self.window.rootViewController = [[MainViewController alloc] init];
+        self.window.rootViewController = [[MainViewController alloc]init];
     }
     else
     {

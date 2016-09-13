@@ -26,6 +26,7 @@
 		5F7681711D86491E0089E2AB /* YapeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F7681701D86491E0089E2AB /* YapeController.m */; };
 		5F770DDE1C45074600677199 /* city.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5F770DDD1C45074600677199 /* city.plist */; };
 		5FBA52911BC8FF200095D825 /* FMDBHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FBA52901BC8FF200095D825 /* FMDBHandle.m */; };
+		5FBCE9A31D88032E00E4F780 /* GroupChatController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FBCE9A21D88032E00E4F780 /* GroupChatController.m */; };
 		5FD0FCA21BDB4DCE0044E8FF /* libUmpayLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FD0FCA11BDB4DCE0044E8FF /* libUmpayLibrary.a */; };
 		5FD0FCA41BDB4DE60044E8FF /* umpLibraryBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5FD0FCA31BDB4DE60044E8FF /* umpLibraryBundle.bundle */; };
 		5FD0FCA91BDB521C0044E8FF /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FD0FCA81BDB521C0044E8FF /* CFNetwork.framework */; };
@@ -287,6 +288,8 @@
 		5F770DDD1C45074600677199 /* city.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = city.plist; sourceTree = "<group>"; };
 		5FBA528F1BC8FF200095D825 /* FMDBHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDBHandle.h; sourceTree = "<group>"; };
 		5FBA52901BC8FF200095D825 /* FMDBHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDBHandle.m; sourceTree = "<group>"; };
+		5FBCE9A11D88032E00E4F780 /* GroupChatController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupChatController.h; sourceTree = "<group>"; };
+		5FBCE9A21D88032E00E4F780 /* GroupChatController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupChatController.m; sourceTree = "<group>"; };
 		5FD0FCA11BDB4DCE0044E8FF /* libUmpayLibrary.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libUmpayLibrary.a; sourceTree = "<group>"; };
 		5FD0FCA31BDB4DE60044E8FF /* umpLibraryBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = umpLibraryBundle.bundle; sourceTree = "<group>"; };
 		5FD0FCA81BDB521C0044E8FF /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
@@ -865,6 +868,15 @@
 			path = DBhandle;
 			sourceTree = "<group>";
 		};
+		5FBCE9A01D8802F500E4F780 /* GtoupChat */ = {
+			isa = PBXGroup;
+			children = (
+				5FBCE9A11D88032E00E4F780 /* GroupChatController.h */,
+				5FBCE9A21D88032E00E4F780 /* GroupChatController.m */,
+			);
+			path = GtoupChat;
+			sourceTree = "<group>";
+		};
 		625F69121B84472A00763A00 /* SHLineGraphView */ = {
 			isa = PBXGroup;
 			children = (
@@ -1109,6 +1121,7 @@
 		62E222261B6F5176003606AB /* MFB */ = {
 			isa = PBXGroup;
 			children = (
+				5FBCE9A01D8802F500E4F780 /* GtoupChat */,
 				5F7681681D8648850089E2AB /* Friend */,
 				5F7681671D86485C0089E2AB /* Mine */,
 				5F7681661D86484D0089E2AB /* Yape */,
@@ -2046,6 +2059,7 @@
 				7EE78BE51BAFCF8E008BAD11 /* QRView.m in Sources */,
 				5F52E8B51C4656C1005CFE36 /* HPTextViewInternal.m in Sources */,
 				62DC03FD1B8D6C9E00861C03 /* MJPropertyType.m in Sources */,
+				5FBCE9A31D88032E00E4F780 /* GroupChatController.m in Sources */,
 				7E60EA281B8C3CCB00703DF2 /* ZLPhotoPickerBrowserPhoto.m in Sources */,
 				7E60EA391B8C3CCB00703DF2 /* ZLPhotoPickerGroupTableViewCell.m in Sources */,
 				7E60EA171B8C3CCB00703DF2 /* SDWebImageDecoder.m in Sources */,
