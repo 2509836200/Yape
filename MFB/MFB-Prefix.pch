@@ -26,7 +26,7 @@
 #import "GTMBase64.h"
 
 #import "NSString+Extend.h"
-
+#import "PublicTool.h"
 
 // 标准系统状态栏高度
 #define APP_STATUSBAR_HEIGHT [UIApplication sharedApplication].statusBarFrame.size.height
@@ -41,6 +41,8 @@
 
 #define currentViewHeight [UIScreen mainScreen].bounds.size.height
 #define currentViewWidth [UIScreen mainScreen].bounds.size.width
+#define normalScreenHeight (currentViewHeight - 64 - 48)
+
 //数字和字母(身份证)
 #define ALPHANUM @"Xx0123456789"
 #define iphone6Width 375.f

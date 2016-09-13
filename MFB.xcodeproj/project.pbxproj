@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5299363A1D87E53F005BC30D /* PublicTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 529936391D87E53F005BC30D /* PublicTool.m */; settings = {ASSET_TAGS = (); }; };
+		529936401D87EB26005BC30D /* YapeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5299363F1D87EB26005BC30D /* YapeCell.m */; settings = {ASSET_TAGS = (); }; };
+		529936451D87EF48005BC30D /* Yape_recommendSelf.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 529936421D87EF48005BC30D /* Yape_recommendSelf.jpg */; settings = {ASSET_TAGS = (); }; };
+		529936461D87EF48005BC30D /* Yape_lookInvitation.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 529936431D87EF48005BC30D /* Yape_lookInvitation.jpg */; settings = {ASSET_TAGS = (); }; };
+		529936471D87EF48005BC30D /* Yape_makeInvitation.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 529936441D87EF48005BC30D /* Yape_makeInvitation.jpg */; settings = {ASSET_TAGS = (); }; };
 		5A41DDC71B8487D500309E47 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A41DDC01B8487D500309E47 /* LoginViewController.m */; };
 		5A41DDC81B8487D500309E47 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A41DDC21B8487D500309E47 /* RegisterViewController.m */; };
 		5A41DDC91B8487D500309E47 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A41DDC41B8487D500309E47 /* WebViewController.m */; };
@@ -248,6 +253,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		529936381D87E53F005BC30D /* PublicTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PublicTool.h; sourceTree = "<group>"; };
+		529936391D87E53F005BC30D /* PublicTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PublicTool.m; sourceTree = "<group>"; };
+		5299363E1D87EB26005BC30D /* YapeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YapeCell.h; sourceTree = "<group>"; };
+		5299363F1D87EB26005BC30D /* YapeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YapeCell.m; sourceTree = "<group>"; };
+		529936421D87EF48005BC30D /* Yape_recommendSelf.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Yape_recommendSelf.jpg; sourceTree = "<group>"; };
+		529936431D87EF48005BC30D /* Yape_lookInvitation.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Yape_lookInvitation.jpg; sourceTree = "<group>"; };
+		529936441D87EF48005BC30D /* Yape_makeInvitation.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Yape_makeInvitation.jpg; sourceTree = "<group>"; };
 		5A41DDBF1B8487D500309E47 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		5A41DDC01B8487D500309E47 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		5A41DDC11B8487D500309E47 /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
@@ -282,8 +294,8 @@
 		5F76816A1D86489F0089E2AB /* FriendController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendController.m; sourceTree = "<group>"; };
 		5F76816C1D8648E80089E2AB /* MyController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyController.h; sourceTree = "<group>"; };
 		5F76816D1D8648E80089E2AB /* MyController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyController.m; sourceTree = "<group>"; };
-		5F76816F1D86491E0089E2AB /* YapeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YapeController.h; sourceTree = "<group>"; };
-		5F7681701D86491E0089E2AB /* YapeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YapeController.m; sourceTree = "<group>"; };
+		5F76816F1D86491E0089E2AB /* YapeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YapeController.h; path = MFB/Yape/YapeController.h; sourceTree = SOURCE_ROOT; };
+		5F7681701D86491E0089E2AB /* YapeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YapeController.m; path = MFB/Yape/YapeController.m; sourceTree = SOURCE_ROOT; };
 		5F770DDD1C45074600677199 /* city.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = city.plist; sourceTree = "<group>"; };
 		5FBA528F1BC8FF200095D825 /* FMDBHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDBHandle.h; sourceTree = "<group>"; };
 		5FBA52901BC8FF200095D825 /* FMDBHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDBHandle.m; sourceTree = "<group>"; };
@@ -736,6 +748,58 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		529936361D87D7DE005BC30D /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		529936371D87E4D4005BC30D /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				529936381D87E53F005BC30D /* PublicTool.h */,
+				529936391D87E53F005BC30D /* PublicTool.m */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		5299363B1D87EA7C005BC30D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5299363D1D87EB02005BC30D /* cells */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5299363C1D87EAD0005BC30D /* YapeController */ = {
+			isa = PBXGroup;
+			children = (
+				5F76816F1D86491E0089E2AB /* YapeController.h */,
+				5F7681701D86491E0089E2AB /* YapeController.m */,
+			);
+			path = YapeController;
+			sourceTree = "<group>";
+		};
+		5299363D1D87EB02005BC30D /* cells */ = {
+			isa = PBXGroup;
+			children = (
+				5299363E1D87EB26005BC30D /* YapeCell.h */,
+				5299363F1D87EB26005BC30D /* YapeCell.m */,
+			);
+			path = cells;
+			sourceTree = "<group>";
+		};
+		529936411D87EE81005BC30D /* YapePicture */ = {
+			isa = PBXGroup;
+			children = (
+				529936421D87EF48005BC30D /* Yape_recommendSelf.jpg */,
+				529936431D87EF48005BC30D /* Yape_lookInvitation.jpg */,
+				529936441D87EF48005BC30D /* Yape_makeInvitation.jpg */,
+			);
+			path = YapePicture;
+			sourceTree = "<group>";
+		};
 		5A41DDBD1B8487D500309E47 /* Register */ = {
 			isa = PBXGroup;
 			children = (
@@ -832,8 +896,8 @@
 		5F7681661D86484D0089E2AB /* Yape */ = {
 			isa = PBXGroup;
 			children = (
-				5F76816F1D86491E0089E2AB /* YapeController.h */,
-				5F7681701D86491E0089E2AB /* YapeController.m */,
+				5299363C1D87EAD0005BC30D /* YapeController */,
+				5299363B1D87EA7C005BC30D /* View */,
 			);
 			path = Yape;
 			sourceTree = "<group>";
@@ -1073,6 +1137,7 @@
 		62E2221B1B6F5176003606AB = {
 			isa = PBXGroup;
 			children = (
+				62E222261B6F5176003606AB /* MFB */,
 				8C6627601CA8C04000F3C855 /* WebKit.framework */,
 				5FE5BD551BE1B12500439014 /* libc++.tbd */,
 				5FE5BD531BE1B11400439014 /* libz.1.2.5.tbd */,
@@ -1091,7 +1156,6 @@
 				8C8D590B1BA14D03004928C2 /* libsqlite3.dylib */,
 				8C8D59091BA13240004928C2 /* MessageUI.framework */,
 				8CEB436D1B82F7D8007CB79A /* libz.dylib */,
-				62E222261B6F5176003606AB /* MFB */,
 				62E222401B6F5177003606AB /* MFBTests */,
 				62E222251B6F5176003606AB /* Products */,
 			);
@@ -1135,6 +1199,7 @@
 		62E222271B6F5176003606AB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				529936411D87EE81005BC30D /* YapePicture */,
 				5F770DDD1C45074600677199 /* city.plist */,
 				8C64E5F41BE1F58D004F603F /* navigationBg.png */,
 				62E641E61B7DEAF900EAABD9 /* navBg.jpg */,
@@ -1168,8 +1233,8 @@
 		62E2224D1B6F527A003606AB /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				529936361D87D7DE005BC30D /* model */,
 				62E2224F1B6F52E2003606AB /* Controller */,
-				62E222501B6F52E2003606AB /* Model */,
 				62E222511B6F52E2003606AB /* View */,
 			);
 			path = Main;
@@ -1213,13 +1278,6 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		62E222501B6F52E2003606AB /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 		62E222511B6F52E2003606AB /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -1260,6 +1318,7 @@
 		62E2227A1B6F6177003606AB /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				529936371D87E4D4005BC30D /* Utilities */,
 				5FBA528E1BC8FF090095D825 /* DBhandle */,
 				62E222811B6F62A9003606AB /* JSONKit.h */,
 				62E222821B6F62A9003606AB /* JSONKit.m */,
@@ -1883,8 +1942,10 @@
 				8C4BE6261B7DB9EA0010BBCA /* ToolViewInputText@2x.png in Resources */,
 				8CEB89BB1BF979AB00F5F681 /* UMSShareListController.xib in Resources */,
 				8CEB89DE1BF979BC00F5F681 /* WeiboSDK.bundle in Resources */,
+				529936451D87EF48005BC30D /* Yape_recommendSelf.jpg in Resources */,
 				62E222331B6F5177003606AB /* Main.storyboard in Resources */,
 				8CEB89B81BF979AB00F5F681 /* UMShareEditViewControlleriPad.xib in Resources */,
+				529936471D87EF48005BC30D /* Yape_makeInvitation.jpg in Resources */,
 				8C4BE6241B7DB9EA0010BBCA /* microphone@2x.png in Resources */,
 				8CEB89B41BF979AB00F5F681 /* UMSCommentDetailController.xib in Resources */,
 				8C4BE62D1B7DB9EA0010BBCA /* umeng_fb_audio_play_01@2x.png in Resources */,
@@ -1893,6 +1954,7 @@
 				8CEB89B91BF979AB00F5F681 /* UMSLoginViewController.xib in Resources */,
 				62E222381B6F5177003606AB /* LaunchScreen.xib in Resources */,
 				62DA6A151B708E7400A39E5E /* loanicon@2x.png in Resources */,
+				529936461D87EF48005BC30D /* Yape_lookInvitation.jpg in Resources */,
 				8C4BE6221B7DB9EA0010BBCA /* bubble_min@2x.png in Resources */,
 				62D881301B85A3B6003CB312 /* IQKeyboardManager.bundle in Resources */,
 				8CEB89E11BF979BC00F5F681 /* TencentOpenApi_IOS_Bundle.bundle in Resources */,
@@ -1952,6 +2014,7 @@
 				7E60EA351B8C3CCB00703DF2 /* ZLPhotoPickerViewController.m in Sources */,
 				62D881381B85A3B6003CB312 /* UIView+IQKeyboardToolbar.m in Sources */,
 				62DC043B1B8DA0A200861C03 /* MJRefreshGifHeader.m in Sources */,
+				5299363A1D87E53F005BC30D /* PublicTool.m in Sources */,
 				62DC043D1B8DA0A200861C03 /* MJRefreshStateHeader.m in Sources */,
 				62E222871B6F62A9003606AB /* JSONKit.m in Sources */,
 				7E60EA2A1B8C3CCB00703DF2 /* ZLPhotoPickerBrowserViewController+SignlePhotoBrowser.m in Sources */,
@@ -2038,6 +2101,7 @@
 				62E2222A1B6F5177003606AB /* main.m in Sources */,
 				7E60EA381B8C3CCB00703DF2 /* ZLPhotoPickerFooterCollectionReusableView.m in Sources */,
 				62E222891B6F62A9003606AB /* Reachability.m in Sources */,
+				529936401D87EB26005BC30D /* YapeCell.m in Sources */,
 				62DC04311B8DA0A200861C03 /* MJRefreshBackFooter.m in Sources */,
 				7E60EA1B1B8C3CCB00703DF2 /* SDWebImagePrefetcher.m in Sources */,
 				7E60EA311B8C3CCB00703DF2 /* ZLPhotoPickerDatas.m in Sources */,
