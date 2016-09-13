@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5299364C1D881CA2005BC30D /* PublicTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 5299364B1D881CA2005BC30D /* PublicTool.m */; settings = {ASSET_TAGS = (); }; };
 		5A41DDC71B8487D500309E47 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A41DDC01B8487D500309E47 /* LoginViewController.m */; };
 		5A41DDC81B8487D500309E47 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A41DDC21B8487D500309E47 /* RegisterViewController.m */; };
 		5A41DDC91B8487D500309E47 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A41DDC41B8487D500309E47 /* WebViewController.m */; };
@@ -248,6 +249,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5299364A1D881CA2005BC30D /* PublicTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PublicTool.h; sourceTree = "<group>"; };
+		5299364B1D881CA2005BC30D /* PublicTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PublicTool.m; sourceTree = "<group>"; };
 		5A41DDBF1B8487D500309E47 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		5A41DDC01B8487D500309E47 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		5A41DDC11B8487D500309E47 /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
@@ -736,6 +739,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		529936491D881C7A005BC30D /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				5299364A1D881CA2005BC30D /* PublicTool.h */,
+				5299364B1D881CA2005BC30D /* PublicTool.m */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		5A41DDBD1B8487D500309E47 /* Register */ = {
 			isa = PBXGroup;
 			children = (
@@ -1073,6 +1085,7 @@
 		62E2221B1B6F5176003606AB = {
 			isa = PBXGroup;
 			children = (
+				62E222261B6F5176003606AB /* MFB */,
 				8C6627601CA8C04000F3C855 /* WebKit.framework */,
 				5FE5BD551BE1B12500439014 /* libc++.tbd */,
 				5FE5BD531BE1B11400439014 /* libz.1.2.5.tbd */,
@@ -1091,7 +1104,6 @@
 				8C8D590B1BA14D03004928C2 /* libsqlite3.dylib */,
 				8C8D59091BA13240004928C2 /* MessageUI.framework */,
 				8CEB436D1B82F7D8007CB79A /* libz.dylib */,
-				62E222261B6F5176003606AB /* MFB */,
 				62E222401B6F5177003606AB /* MFBTests */,
 				62E222251B6F5176003606AB /* Products */,
 			);
@@ -1260,6 +1272,7 @@
 		62E2227A1B6F6177003606AB /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				529936491D881C7A005BC30D /* Utilities */,
 				5FBA528E1BC8FF090095D825 /* DBhandle */,
 				62E222811B6F62A9003606AB /* JSONKit.h */,
 				62E222821B6F62A9003606AB /* JSONKit.m */,
@@ -1952,6 +1965,7 @@
 				7E60EA351B8C3CCB00703DF2 /* ZLPhotoPickerViewController.m in Sources */,
 				62D881381B85A3B6003CB312 /* UIView+IQKeyboardToolbar.m in Sources */,
 				62DC043B1B8DA0A200861C03 /* MJRefreshGifHeader.m in Sources */,
+				5299364C1D881CA2005BC30D /* PublicTool.m in Sources */,
 				62DC043D1B8DA0A200861C03 /* MJRefreshStateHeader.m in Sources */,
 				62E222871B6F62A9003606AB /* JSONKit.m in Sources */,
 				7E60EA2A1B8C3CCB00703DF2 /* ZLPhotoPickerBrowserViewController+SignlePhotoBrowser.m in Sources */,
