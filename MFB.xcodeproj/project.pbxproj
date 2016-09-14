@@ -11,6 +11,7 @@
 		5221424D1D88E7310029E882 /* Yape_makeInvitation.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5221424A1D88E7310029E882 /* Yape_makeInvitation.jpg */; settings = {ASSET_TAGS = (); }; };
 		5221424E1D88E7310029E882 /* Yape_lookInvitation.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5221424B1D88E7310029E882 /* Yape_lookInvitation.jpg */; settings = {ASSET_TAGS = (); }; };
 		5221424F1D88E7310029E882 /* Yape_recommendSelf.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5221424C1D88E7310029E882 /* Yape_recommendSelf.jpg */; settings = {ASSET_TAGS = (); }; };
+		522142521D88EC670029E882 /* IssuedDatingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 522142511D88EC670029E882 /* IssuedDatingViewController.m */; settings = {ASSET_TAGS = (); }; };
 		5299364C1D881CA2005BC30D /* PublicTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 5299364B1D881CA2005BC30D /* PublicTool.m */; settings = {ASSET_TAGS = (); }; };
 		5A41DDC71B8487D500309E47 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A41DDC01B8487D500309E47 /* LoginViewController.m */; };
 		5A41DDC81B8487D500309E47 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A41DDC21B8487D500309E47 /* RegisterViewController.m */; };
@@ -259,6 +260,8 @@
 		5221424A1D88E7310029E882 /* Yape_makeInvitation.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Yape_makeInvitation.jpg; sourceTree = "<group>"; };
 		5221424B1D88E7310029E882 /* Yape_lookInvitation.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Yape_lookInvitation.jpg; sourceTree = "<group>"; };
 		5221424C1D88E7310029E882 /* Yape_recommendSelf.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Yape_recommendSelf.jpg; sourceTree = "<group>"; };
+		522142501D88EC670029E882 /* IssuedDatingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IssuedDatingViewController.h; sourceTree = "<group>"; };
+		522142511D88EC670029E882 /* IssuedDatingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IssuedDatingViewController.m; sourceTree = "<group>"; };
 		5299364A1D881CA2005BC30D /* PublicTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PublicTool.h; sourceTree = "<group>"; };
 		5299364B1D881CA2005BC30D /* PublicTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PublicTool.m; sourceTree = "<group>"; };
 		5A41DDBF1B8487D500309E47 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
@@ -764,6 +767,8 @@
 			children = (
 				5F76816F1D86491E0089E2AB /* YapeController.h */,
 				5F7681701D86491E0089E2AB /* YapeController.m */,
+				522142501D88EC670029E882 /* IssuedDatingViewController.h */,
+				522142511D88EC670029E882 /* IssuedDatingViewController.m */,
 			);
 			path = YapeController;
 			sourceTree = "<group>";
@@ -2156,6 +2161,7 @@
 				8C30E12A1C8D802E00DEDA34 /* NSMutableAttributedString+TY.m in Sources */,
 				8C30E12F1C8D802E00DEDA34 /* TYLinkTextStorage.m in Sources */,
 				62E222711B6F6029003606AB /* AFHTTPRequestOperation.m in Sources */,
+				522142521D88EC670029E882 /* IssuedDatingViewController.m in Sources */,
 				62DC04301B8DA0A200861C03 /* MJRefreshAutoFooter.m in Sources */,
 				7E60EA3C1B8C3CCB00703DF2 /* DALabeledCircularProgressView.m in Sources */,
 				5FBA52911BC8FF200095D825 /* FMDBHandle.m in Sources */,
