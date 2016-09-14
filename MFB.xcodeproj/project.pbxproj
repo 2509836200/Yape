@@ -12,6 +12,9 @@
 		5221424E1D88E7310029E882 /* Yape_lookInvitation.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5221424B1D88E7310029E882 /* Yape_lookInvitation.jpg */; settings = {ASSET_TAGS = (); }; };
 		5221424F1D88E7310029E882 /* Yape_recommendSelf.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5221424C1D88E7310029E882 /* Yape_recommendSelf.jpg */; settings = {ASSET_TAGS = (); }; };
 		522142521D88EC670029E882 /* IssuedDatingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 522142511D88EC670029E882 /* IssuedDatingViewController.m */; settings = {ASSET_TAGS = (); }; };
+		522142551D891E580029E882 /* CheckDatingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 522142541D891E580029E882 /* CheckDatingViewController.m */; settings = {ASSET_TAGS = (); }; };
+		522142591D8923FA0029E882 /* TopChangeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 522142581D8923FA0029E882 /* TopChangeView.m */; settings = {ASSET_TAGS = (); }; };
+		523F5FB81D89442700C3D389 /* SelfRecommendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 523F5FB71D89442700C3D389 /* SelfRecommendViewController.m */; settings = {ASSET_TAGS = (); }; };
 		5299364C1D881CA2005BC30D /* PublicTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 5299364B1D881CA2005BC30D /* PublicTool.m */; settings = {ASSET_TAGS = (); }; };
 		5A41DDC71B8487D500309E47 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A41DDC01B8487D500309E47 /* LoginViewController.m */; };
 		5A41DDC81B8487D500309E47 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A41DDC21B8487D500309E47 /* RegisterViewController.m */; };
@@ -262,6 +265,12 @@
 		5221424C1D88E7310029E882 /* Yape_recommendSelf.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Yape_recommendSelf.jpg; sourceTree = "<group>"; };
 		522142501D88EC670029E882 /* IssuedDatingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IssuedDatingViewController.h; sourceTree = "<group>"; };
 		522142511D88EC670029E882 /* IssuedDatingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IssuedDatingViewController.m; sourceTree = "<group>"; };
+		522142531D891E580029E882 /* CheckDatingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckDatingViewController.h; sourceTree = "<group>"; };
+		522142541D891E580029E882 /* CheckDatingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckDatingViewController.m; sourceTree = "<group>"; };
+		522142571D8923FA0029E882 /* TopChangeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopChangeView.h; sourceTree = "<group>"; };
+		522142581D8923FA0029E882 /* TopChangeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopChangeView.m; sourceTree = "<group>"; };
+		523F5FB61D89442700C3D389 /* SelfRecommendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelfRecommendViewController.h; sourceTree = "<group>"; };
+		523F5FB71D89442700C3D389 /* SelfRecommendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelfRecommendViewController.m; sourceTree = "<group>"; };
 		5299364A1D881CA2005BC30D /* PublicTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PublicTool.h; sourceTree = "<group>"; };
 		5299364B1D881CA2005BC30D /* PublicTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PublicTool.m; sourceTree = "<group>"; };
 		5A41DDBF1B8487D500309E47 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
@@ -757,6 +766,7 @@
 		522142431D88E4280029E882 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				522142561D8922620029E882 /* ImportViews */,
 				522142451D88E45B0029E882 /* Cells */,
 			);
 			path = View;
@@ -769,6 +779,10 @@
 				5F7681701D86491E0089E2AB /* YapeController.m */,
 				522142501D88EC670029E882 /* IssuedDatingViewController.h */,
 				522142511D88EC670029E882 /* IssuedDatingViewController.m */,
+				522142531D891E580029E882 /* CheckDatingViewController.h */,
+				522142541D891E580029E882 /* CheckDatingViewController.m */,
+				523F5FB61D89442700C3D389 /* SelfRecommendViewController.h */,
+				523F5FB71D89442700C3D389 /* SelfRecommendViewController.m */,
 			);
 			path = YapeController;
 			sourceTree = "<group>";
@@ -790,6 +804,15 @@
 				5221424C1D88E7310029E882 /* Yape_recommendSelf.jpg */,
 			);
 			path = YapePicture;
+			sourceTree = "<group>";
+		};
+		522142561D8922620029E882 /* ImportViews */ = {
+			isa = PBXGroup;
+			children = (
+				522142571D8923FA0029E882 /* TopChangeView.h */,
+				522142581D8923FA0029E882 /* TopChangeView.m */,
+			);
+			path = ImportViews;
 			sourceTree = "<group>";
 		};
 		529936491D881C7A005BC30D /* Utilities */ = {
@@ -2052,6 +2075,7 @@
 				8CC8E4CC1BFC7ABA000FBAC3 /* NJKWebViewProgress.m in Sources */,
 				62D295301B71AA03004E57C2 /* TAAbstractDotView.m in Sources */,
 				62DC04011B8D6C9E00861C03 /* NSObject+MJProperty.m in Sources */,
+				522142551D891E580029E882 /* CheckDatingViewController.m in Sources */,
 				62E222801B6F6265003606AB /* NSString+SHA.m in Sources */,
 				62DC03F91B8D6C9E00861C03 /* MJExtensionConst.m in Sources */,
 				8C582B6B1BA90A4C00D91151 /* GuideViewController.m in Sources */,
@@ -2068,6 +2092,7 @@
 				8C4BE6371B7DB9EA0010BBCA /* UMRadialView.m in Sources */,
 				62DC043C1B8DA0A200861C03 /* MJRefreshNormalHeader.m in Sources */,
 				62D881371B85A3B6003CB312 /* UIView+Hierarchy.m in Sources */,
+				522142591D8923FA0029E882 /* TopChangeView.m in Sources */,
 				62D295351B71AA03004E57C2 /* SDCycleScrollView.m in Sources */,
 				5A4B9B331B8EDF2400F2EC36 /* LostPasswordViewController.m in Sources */,
 				5F52E8B41C4656C1005CFE36 /* HPGrowingTextView.m in Sources */,
@@ -2142,6 +2167,7 @@
 				5F72D8291BCBB67900E0E92F /* FMDatabaseAdditions.m in Sources */,
 				5F72D82A1BCBB67900E0E92F /* FMDatabasePool.m in Sources */,
 				62DC04351B8DA0A200861C03 /* MJRefreshAutoGifFooter.m in Sources */,
+				523F5FB81D89442700C3D389 /* SelfRecommendViewController.m in Sources */,
 				7E60EA211B8C3CCB00703DF2 /* UIView+WebCacheOperation.m in Sources */,
 				8C30E12D1C8D802E00DEDA34 /* TYImageCache.m in Sources */,
 				62D295341B71AA03004E57C2 /* SDCollectionViewCell.m in Sources */,

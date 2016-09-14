@@ -44,20 +44,23 @@
 {
         self.contentArray = @[@{@"title":@"发起邀约",
                          @"englishTitle":@"Issued dating",
-                              @"bgImage":@"Yape_makeInvitation.jpg"
+                              @"bgImage":@"Yape_makeInvitation.jpg",
+                              @"controller":@"IssuedDatingViewController"
                                 
                                 },
                              @{
                                 @"title":@"查看邀约",
                          @"englishTitle":@"Check the dating",
-                              @"bgImage":@"Yape_lookInvitation.jpg"
-                                
+                              @"bgImage":@"Yape_lookInvitation.jpg",
+                           @"controller":@"CheckDatingViewController"
+ 
                                 },
                              @{
                                 @"title":@"自我推荐",
                          @"englishTitle":@"Self recommendation",
-                              @"bgImage":@"Yape_recommendSelf.jpg"
-                                
+                              @"bgImage":@"Yape_recommendSelf.jpg",
+                           @"controller":@"SelfRecommendViewController"
+ 
                                 }
                               
                               ];
@@ -91,6 +94,10 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(nonnull NSIndexPath *)indexPath
 {
+    NSDictionary *dic = self.contentArray[indexPath.row];
+    Class cls = NSClassFromString(dic[@"controller"]);
+    BaseViewController *secondVC = [[cls alloc] init];
+    [self.navigationController pushViewController:secondVC animated:YES];
        [HttpManager afRequestWithURL2:@"https://www.baidu.com" httpHeaders:nil params:nil data:nil tipMessage:self.view httpMethod:@"GET" completion:^(id result, long timeDiff, NSString *networkTime) {
                NSLog(@"%@",result);
            } failure:^(id result) {

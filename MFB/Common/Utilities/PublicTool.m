@@ -54,4 +54,28 @@
     return lable;
 }
 
++(UIButton *)initButtonWithFrame:(CGRect)frame
+                            text:(NSString *)text
+                            font:(UIFont *)font
+                 normalTextColor:(UIColor *)normalTextColor
+                         normalBgColor:(UIColor *)normalBgColor
+                             tag:(NSInteger)tag
+                       superView:(UIView *)superView
+                          target:(nullable id)target
+                          action:(SEL)action
+{
+    UIButton *button = (UIButton *)[superView viewWithTag:tag];
+    if (!button) {
+        button = [[UIButton alloc] initWithFrame:frame];
+        button.titleLabel.font = font;
+        [button setTitle:text forState:UIControlStateNormal];
+        [button setTitleColor:normalTextColor forState:UIControlStateNormal];
+        button.backgroundColor = normalBgColor;
+        button.tag = tag;
+        [superView addSubview:button];
+        [button addTarget:target action:action forControlEvents:UIControlEventTouchUpInside];
+    }
+    return button;
+}
+
 @end
