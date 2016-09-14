@@ -19,12 +19,13 @@
     // Do any additional setup after loading the view.
     self.title = @"Yape";
     self.view.backgroundColor =[UIColor greenColor];
-    UIButton *button =[UIButton buttonWithType:UIButtonTypeCustom];
-    button.frame =CGRectMake(100, 200, 100, 100);
-    button.backgroundColor =[UIColor redColor];
-    [button addTarget:self action:@selector(aa) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:button];
-    
+
+    [HttpManager afRequestWithURL2:@"https://www.baidu.com" httpHeaders:nil params:nil data:nil tipMessage:self.view httpMethod:@"GET" completion:^(id result, long timeDiff, NSString *networkTime) {
+               NSLog(@"%@",result);
+           } failure:^(id result) {
+               NSLog(@"%@",result);
+               
+           }];
 }
 -(void)aa{
     RegisterViewController *regist=[[RegisterViewController alloc]init];
