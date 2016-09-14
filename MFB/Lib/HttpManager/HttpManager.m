@@ -587,7 +587,7 @@
 {
     //1.拼接完整的网址
     //拼接完整URL
-    NSString *fullURLString = [kRequestIP stringByAppendingString:urlString];
+    NSString *fullURLString = urlString;
     
     //2.拼接参数
     if (params == nil)

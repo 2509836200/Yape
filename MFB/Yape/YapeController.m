@@ -19,7 +19,12 @@
     // Do any additional setup after loading the view.
     self.title = @"Yape";
     self.view.backgroundColor =[UIColor greenColor];
-    
+    [HttpManager afRequestWithURL2:@"https://www.baidu.com" httpHeaders:nil params:nil data:nil tipMessage:self.view httpMethod:@"GET" completion:^(id result, long timeDiff, NSString *networkTime) {
+               NSLog(@"%@",result);
+           } failure:^(id result) {
+               NSLog(@"%@",result);
+               
+           }];
 }
 
 - (void)didReceiveMemoryWarning {
