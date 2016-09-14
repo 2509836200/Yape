@@ -8,8 +8,12 @@
 
 #import "YapeController.h"
 #import "RegisterViewController.h"
-@interface YapeController ()
+#import "YapeCell.h"
+#import "HttpManager.h"
 
+@interface YapeController ()<UITableViewDataSource,UITableViewDelegate>
+@property (nonatomic, strong)UITableView *customTableView;
+@property (nonatomic, strong)NSArray *contentArray;
 @end
 
 @implementation YapeController
@@ -19,17 +23,79 @@
     // Do any additional setup after loading the view.
     self.title = @"Yape";
     self.view.backgroundColor =[UIColor greenColor];
+    
+    UIButton *button =[UIButton buttonWithType:UIButtonTypeCustom];
+    button.frame =CGRectMake(100, 200, 100, 100);
+    button.backgroundColor =[UIColor redColor];
+    [button addTarget:self action:@selector(aa) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:button];
 
-    [HttpManager afRequestWithURL2:@"https://www.baidu.com" httpHeaders:nil params:nil data:nil tipMessage:self.view httpMethod:@"GET" completion:^(id result, long timeDiff, NSString *networkTime) {
-               NSLog(@"%@",result);
-           } failure:^(id result) {
-               NSLog(@"%@",result);
-               
-           }];
+    self.customTableView = [PublicTool initTableViewWithFrame:CGRectMake(0, 0, currentViewWidth, normalScreenHeight) bgColor:colorWithHexString(@"ffffff") superView:self.view tag:110];
+    self.customTableView.delegate = self;
+    self.customTableView.dataSource = self;
+    [self initContentArr];
 }
 -(void)aa{
     RegisterViewController *regist=[[RegisterViewController alloc]init];
     [self.navigationController pushViewController:regist animated:YES];
+}
+
+-(void)initContentArr
+{
+        self.contentArray = @[@{@"title":@"发起邀约",
+                         @"englishTitle":@"Issued dating",
+                              @"bgImage":@"Yape_makeInvitation.jpg"
+                                
+                                },
+                             @{
+                                @"title":@"查看邀约",
+                         @"englishTitle":@"Check the dating",
+                              @"bgImage":@"Yape_lookInvitation.jpg"
+                                
+                                },
+                             @{
+                                @"title":@"自我推荐",
+                         @"englishTitle":@"Self recommendation",
+                              @"bgImage":@"Yape_recommendSelf.jpg"
+                                
+                                }
+                              
+                              ];
+    
+}
+#pragma UITableViewDelegate&&DataSource
+
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+        return self.contentArray.count;
+    
+}
+
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+        static NSString *identifier = @"YapeCell";
+        YapeCell *yapeCell = [tableView dequeueReusableCellWithIdentifier:identifier];
+        if (!yapeCell) {
+                yapeCell = [[YapeCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:identifier];
+                yapeCell.selectionStyle = UITableViewCellSelectionStyleNone;
+            }
+        NSDictionary *dic = [self.contentArray objectAtIndex:indexPath.row];
+        [yapeCell SetContentWithDictionary:dic];
+        return yapeCell;
+}
+
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+        return normalScreenHeight/3.0;
+}
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(nonnull NSIndexPath *)indexPath
+{
+       [HttpManager afRequestWithURL2:@"https://www.baidu.com" httpHeaders:nil params:nil data:nil tipMessage:self.view httpMethod:@"GET" completion:^(id result, long timeDiff, NSString *networkTime) {
+               NSLog(@"%@",result);
+           } failure:^(id result) {
+                   NSLog(@"%@",result);
+               }];
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

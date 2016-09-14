@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		522142481D88E47E0029E882 /* YapeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 522142471D88E47E0029E882 /* YapeCell.m */; settings = {ASSET_TAGS = (); }; };
+		5221424D1D88E7310029E882 /* Yape_makeInvitation.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5221424A1D88E7310029E882 /* Yape_makeInvitation.jpg */; settings = {ASSET_TAGS = (); }; };
+		5221424E1D88E7310029E882 /* Yape_lookInvitation.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5221424B1D88E7310029E882 /* Yape_lookInvitation.jpg */; settings = {ASSET_TAGS = (); }; };
+		5221424F1D88E7310029E882 /* Yape_recommendSelf.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5221424C1D88E7310029E882 /* Yape_recommendSelf.jpg */; settings = {ASSET_TAGS = (); }; };
 		5299364C1D881CA2005BC30D /* PublicTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 5299364B1D881CA2005BC30D /* PublicTool.m */; settings = {ASSET_TAGS = (); }; };
 		5A41DDC71B8487D500309E47 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A41DDC01B8487D500309E47 /* LoginViewController.m */; };
 		5A41DDC81B8487D500309E47 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A41DDC21B8487D500309E47 /* RegisterViewController.m */; };
@@ -250,6 +254,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		522142461D88E47E0029E882 /* YapeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YapeCell.h; sourceTree = "<group>"; };
+		522142471D88E47E0029E882 /* YapeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YapeCell.m; sourceTree = "<group>"; };
+		5221424A1D88E7310029E882 /* Yape_makeInvitation.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Yape_makeInvitation.jpg; sourceTree = "<group>"; };
+		5221424B1D88E7310029E882 /* Yape_lookInvitation.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Yape_lookInvitation.jpg; sourceTree = "<group>"; };
+		5221424C1D88E7310029E882 /* Yape_recommendSelf.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Yape_recommendSelf.jpg; sourceTree = "<group>"; };
 		5299364A1D881CA2005BC30D /* PublicTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PublicTool.h; sourceTree = "<group>"; };
 		5299364B1D881CA2005BC30D /* PublicTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PublicTool.m; sourceTree = "<group>"; };
 		5A41DDBF1B8487D500309E47 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
@@ -286,8 +295,8 @@
 		5F76816A1D86489F0089E2AB /* FriendController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendController.m; sourceTree = "<group>"; };
 		5F76816C1D8648E80089E2AB /* MyController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyController.h; sourceTree = "<group>"; };
 		5F76816D1D8648E80089E2AB /* MyController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyController.m; sourceTree = "<group>"; };
-		5F76816F1D86491E0089E2AB /* YapeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YapeController.h; sourceTree = "<group>"; };
-		5F7681701D86491E0089E2AB /* YapeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YapeController.m; sourceTree = "<group>"; };
+		5F76816F1D86491E0089E2AB /* YapeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YapeController.h; path = MFB/Yape/YapeController.h; sourceTree = SOURCE_ROOT; };
+		5F7681701D86491E0089E2AB /* YapeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YapeController.m; path = MFB/Yape/YapeController.m; sourceTree = SOURCE_ROOT; };
 		5F770DDD1C45074600677199 /* city.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = city.plist; sourceTree = "<group>"; };
 		5FBA528F1BC8FF200095D825 /* FMDBHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDBHandle.h; sourceTree = "<group>"; };
 		5FBA52901BC8FF200095D825 /* FMDBHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDBHandle.m; sourceTree = "<group>"; };
@@ -742,6 +751,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		522142431D88E4280029E882 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				522142451D88E45B0029E882 /* Cells */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		522142441D88E43B0029E882 /* YapeController */ = {
+			isa = PBXGroup;
+			children = (
+				5F76816F1D86491E0089E2AB /* YapeController.h */,
+				5F7681701D86491E0089E2AB /* YapeController.m */,
+			);
+			path = YapeController;
+			sourceTree = "<group>";
+		};
+		522142451D88E45B0029E882 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				522142461D88E47E0029E882 /* YapeCell.h */,
+				522142471D88E47E0029E882 /* YapeCell.m */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		522142491D88E7170029E882 /* YapePicture */ = {
+			isa = PBXGroup;
+			children = (
+				5221424A1D88E7310029E882 /* Yape_makeInvitation.jpg */,
+				5221424B1D88E7310029E882 /* Yape_lookInvitation.jpg */,
+				5221424C1D88E7310029E882 /* Yape_recommendSelf.jpg */,
+			);
+			path = YapePicture;
+			sourceTree = "<group>";
+		};
 		529936491D881C7A005BC30D /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
@@ -847,8 +892,8 @@
 		5F7681661D86484D0089E2AB /* Yape */ = {
 			isa = PBXGroup;
 			children = (
-				5F76816F1D86491E0089E2AB /* YapeController.h */,
-				5F7681701D86491E0089E2AB /* YapeController.m */,
+				522142441D88E43B0029E882 /* YapeController */,
+				522142431D88E4280029E882 /* View */,
 			);
 			path = Yape;
 			sourceTree = "<group>";
@@ -1160,6 +1205,7 @@
 		62E222271B6F5176003606AB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				522142491D88E7170029E882 /* YapePicture */,
 				5F770DDD1C45074600677199 /* city.plist */,
 				8C64E5F41BE1F58D004F603F /* navigationBg.png */,
 				62E641E61B7DEAF900EAABD9 /* navBg.jpg */,
@@ -1905,6 +1951,7 @@
 				8C4BE6281B7DB9EA0010BBCA /* ToolViewInputVoice@2x.png in Resources */,
 				8C4BE6231B7DB9EA0010BBCA /* cancel@2x.png in Resources */,
 				8C4BE62B1B7DB9EA0010BBCA /* umeng_fb_audio_dialog_cancel@2x.png in Resources */,
+				5221424D1D88E7310029E882 /* Yape_makeInvitation.jpg in Resources */,
 				8C4BE6201B7DB9EA0010BBCA /* UMFeedbackLocalizable.strings in Resources */,
 				8C4BE6261B7DB9EA0010BBCA /* ToolViewInputText@2x.png in Resources */,
 				8CEB89BB1BF979AB00F5F681 /* UMSShareListController.xib in Resources */,
@@ -1919,10 +1966,12 @@
 				8CEB89B91BF979AB00F5F681 /* UMSLoginViewController.xib in Resources */,
 				62E222381B6F5177003606AB /* LaunchScreen.xib in Resources */,
 				62DA6A151B708E7400A39E5E /* loanicon@2x.png in Resources */,
+				5221424E1D88E7310029E882 /* Yape_lookInvitation.jpg in Resources */,
 				8C4BE6221B7DB9EA0010BBCA /* bubble_min@2x.png in Resources */,
 				62D881301B85A3B6003CB312 /* IQKeyboardManager.bundle in Resources */,
 				8CEB89E11BF979BC00F5F681 /* TencentOpenApi_IOS_Bundle.bundle in Resources */,
 				8C4BE6291B7DB9EA0010BBCA /* ToolViewInputVoiceHL@2x.png in Resources */,
+				5221424F1D88E7310029E882 /* Yape_recommendSelf.jpg in Resources */,
 				8C4BE6271B7DB9EA0010BBCA /* ToolViewInputTextHL@2x.png in Resources */,
 				8CEB89B21BF979AB00F5F681 /* UMSocialLocalizable.strings in Resources */,
 				8C4BE6301B7DB9EA0010BBCA /* umeng_fb_audio_play_default@2x.png in Resources */,
@@ -1979,6 +2028,7 @@
 				62D881381B85A3B6003CB312 /* UIView+IQKeyboardToolbar.m in Sources */,
 				62DC043B1B8DA0A200861C03 /* MJRefreshGifHeader.m in Sources */,
 				5299364C1D881CA2005BC30D /* PublicTool.m in Sources */,
+				522142481D88E47E0029E882 /* YapeCell.m in Sources */,
 				62DC043D1B8DA0A200861C03 /* MJRefreshStateHeader.m in Sources */,
 				62E222871B6F62A9003606AB /* JSONKit.m in Sources */,
 				7E60EA2A1B8C3CCB00703DF2 /* ZLPhotoPickerBrowserViewController+SignlePhotoBrowser.m in Sources */,
