@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5211CF471D911B21006FC3C4 /* UserCenter_headImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5211CF461D911B21006FC3C4 /* UserCenter_headImage.jpg */; settings = {ASSET_TAGS = (); }; };
+		5211CF491D91206D006FC3C4 /* UserCenter_backgroundView.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5211CF481D91206D006FC3C4 /* UserCenter_backgroundView.jpg */; settings = {ASSET_TAGS = (); }; };
+		5211CF4D1D913E6A006FC3C4 /* UserCenter_icon01.png in Resources */ = {isa = PBXBuildFile; fileRef = 5211CF4C1D913E6A006FC3C4 /* UserCenter_icon01.png */; settings = {ASSET_TAGS = (); }; };
 		522142481D88E47E0029E882 /* YapeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 522142471D88E47E0029E882 /* YapeCell.m */; settings = {ASSET_TAGS = (); }; };
 		5221424D1D88E7310029E882 /* Yape_makeInvitation.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5221424A1D88E7310029E882 /* Yape_makeInvitation.jpg */; settings = {ASSET_TAGS = (); }; };
 		5221424E1D88E7310029E882 /* Yape_lookInvitation.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5221424B1D88E7310029E882 /* Yape_lookInvitation.jpg */; settings = {ASSET_TAGS = (); }; };
@@ -16,6 +19,7 @@
 		522142591D8923FA0029E882 /* TopChangeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 522142581D8923FA0029E882 /* TopChangeView.m */; settings = {ASSET_TAGS = (); }; };
 		523F5FB81D89442700C3D389 /* SelfRecommendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 523F5FB71D89442700C3D389 /* SelfRecommendViewController.m */; settings = {ASSET_TAGS = (); }; };
 		5299364C1D881CA2005BC30D /* PublicTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 5299364B1D881CA2005BC30D /* PublicTool.m */; settings = {ASSET_TAGS = (); }; };
+		52B43DD51D8FE25700622998 /* UserCenterItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 52B43DD41D8FE25700622998 /* UserCenterItemCell.m */; settings = {ASSET_TAGS = (); }; };
 		5A41DDC71B8487D500309E47 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A41DDC01B8487D500309E47 /* LoginViewController.m */; };
 		5A41DDC81B8487D500309E47 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A41DDC21B8487D500309E47 /* RegisterViewController.m */; };
 		5A41DDC91B8487D500309E47 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A41DDC41B8487D500309E47 /* WebViewController.m */; };
@@ -258,6 +262,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5211CF461D911B21006FC3C4 /* UserCenter_headImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = UserCenter_headImage.jpg; sourceTree = "<group>"; };
+		5211CF481D91206D006FC3C4 /* UserCenter_backgroundView.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = UserCenter_backgroundView.jpg; sourceTree = "<group>"; };
+		5211CF4C1D913E6A006FC3C4 /* UserCenter_icon01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UserCenter_icon01.png; sourceTree = "<group>"; };
 		522142461D88E47E0029E882 /* YapeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YapeCell.h; sourceTree = "<group>"; };
 		522142471D88E47E0029E882 /* YapeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YapeCell.m; sourceTree = "<group>"; };
 		5221424A1D88E7310029E882 /* Yape_makeInvitation.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Yape_makeInvitation.jpg; sourceTree = "<group>"; };
@@ -273,6 +280,8 @@
 		523F5FB71D89442700C3D389 /* SelfRecommendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelfRecommendViewController.m; sourceTree = "<group>"; };
 		5299364A1D881CA2005BC30D /* PublicTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PublicTool.h; sourceTree = "<group>"; };
 		5299364B1D881CA2005BC30D /* PublicTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PublicTool.m; sourceTree = "<group>"; };
+		52B43DD31D8FE25700622998 /* UserCenterItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserCenterItemCell.h; sourceTree = "<group>"; };
+		52B43DD41D8FE25700622998 /* UserCenterItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserCenterItemCell.m; sourceTree = "<group>"; };
 		5A41DDBF1B8487D500309E47 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		5A41DDC01B8487D500309E47 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		5A41DDC11B8487D500309E47 /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
@@ -763,6 +772,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5211CF411D911406006FC3C4 /* UserCenterPicture */ = {
+			isa = PBXGroup;
+			children = (
+				5211CF4C1D913E6A006FC3C4 /* UserCenter_icon01.png */,
+				5211CF481D91206D006FC3C4 /* UserCenter_backgroundView.jpg */,
+				5211CF461D911B21006FC3C4 /* UserCenter_headImage.jpg */,
+			);
+			path = UserCenterPicture;
+			sourceTree = "<group>";
+		};
 		522142431D88E4280029E882 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -822,6 +841,23 @@
 				5299364B1D881CA2005BC30D /* PublicTool.m */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		52B43DD11D8FE20E00622998 /* ImportViews */ = {
+			isa = PBXGroup;
+			children = (
+				52B43DD21D8FE22500622998 /* Cells */,
+			);
+			path = ImportViews;
+			sourceTree = "<group>";
+		};
+		52B43DD21D8FE22500622998 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				52B43DD31D8FE25700622998 /* UserCenterItemCell.h */,
+				52B43DD41D8FE25700622998 /* UserCenterItemCell.m */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		5A41DDBD1B8487D500309E47 /* Register */ = {
@@ -929,6 +965,7 @@
 		5F7681671D86485C0089E2AB /* Mine */ = {
 			isa = PBXGroup;
 			children = (
+				52B43DD11D8FE20E00622998 /* ImportViews */,
 				5F76816C1D8648E80089E2AB /* MyController.h */,
 				5F76816D1D8648E80089E2AB /* MyController.m */,
 			);
@@ -1233,6 +1270,7 @@
 		62E222271B6F5176003606AB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				5211CF411D911406006FC3C4 /* UserCenterPicture */,
 				522142491D88E7170029E882 /* YapePicture */,
 				5F770DDD1C45074600677199 /* city.plist */,
 				8C64E5F41BE1F58D004F603F /* navigationBg.png */,
@@ -1965,6 +2003,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8CEB89B71BF979AB00F5F681 /* UMShareEditViewController.xib in Resources */,
+				5211CF4D1D913E6A006FC3C4 /* UserCenter_icon01.png in Resources */,
 				5FD0FCA41BDB4DE60044E8FF /* umpLibraryBundle.bundle in Resources */,
 				8C4BE62E1B7DB9EA0010BBCA /* umeng_fb_audio_play_02@2x.png in Resources */,
 				8C4BE62A1B7DB9EA0010BBCA /* umeng_add_photo@2x.png in Resources */,
@@ -1989,6 +2028,7 @@
 				8C4BE6241B7DB9EA0010BBCA /* microphone@2x.png in Resources */,
 				8CEB89B41BF979AB00F5F681 /* UMSCommentDetailController.xib in Resources */,
 				8C4BE62D1B7DB9EA0010BBCA /* umeng_fb_audio_play_01@2x.png in Resources */,
+				5211CF471D911B21006FC3C4 /* UserCenter_headImage.jpg in Resources */,
 				8C4BE62F1B7DB9EA0010BBCA /* umeng_fb_audio_play_03@2x.png in Resources */,
 				8C4BE6251B7DB9EA0010BBCA /* save@2x.png in Resources */,
 				8CEB89B91BF979AB00F5F681 /* UMSLoginViewController.xib in Resources */,
@@ -1999,6 +2039,7 @@
 				62D881301B85A3B6003CB312 /* IQKeyboardManager.bundle in Resources */,
 				8CEB89E11BF979BC00F5F681 /* TencentOpenApi_IOS_Bundle.bundle in Resources */,
 				8C4BE6291B7DB9EA0010BBCA /* ToolViewInputVoiceHL@2x.png in Resources */,
+				5211CF491D91206D006FC3C4 /* UserCenter_backgroundView.jpg in Resources */,
 				5221424F1D88E7310029E882 /* Yape_recommendSelf.jpg in Resources */,
 				8C4BE6271B7DB9EA0010BBCA /* ToolViewInputTextHL@2x.png in Resources */,
 				8CEB89B21BF979AB00F5F681 /* UMSocialLocalizable.strings in Resources */,
@@ -2176,6 +2217,7 @@
 				62ECC0CD1C06E92000CEB765 /* Harpy.m in Sources */,
 				62E1F0451B8477C100B41BAD /* BaseViewController.m in Sources */,
 				62D2952F1B71AA03004E57C2 /* NSData+SDDataCache.m in Sources */,
+				52B43DD51D8FE25700622998 /* UserCenterItemCell.m in Sources */,
 				7E60EA241B8C3CCB00703DF2 /* ZLCamera.m in Sources */,
 				7E60EA321B8C3CCB00703DF2 /* ZLPhotoPickerGroup.m in Sources */,
 				7E60EA261B8C3CCB00703DF2 /* ZLCameraView.m in Sources */,

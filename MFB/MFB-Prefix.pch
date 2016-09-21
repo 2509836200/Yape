@@ -51,6 +51,7 @@
 
 #define  colorWithRGB(r,g,b) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:1.0]
 #define  colorWithHexString(a) [AdaptInterface colorWithHexString1:a]
+#define fontWithFontSize(fontSize) [UIFont systemFontOfSize:fontSize]
 //字符串不为空
 #define IS_NOT_EMPTY(string) (string && ![[string stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]] isEqualToString:@""]&&![string isKindOfClass:[NSNull class]])
 
