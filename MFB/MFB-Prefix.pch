@@ -21,10 +21,12 @@
 #import "HttpManager.h"
 #import "SVProgressHUD.h"
 #import "UINavigationController+FDFullscreenPopGesture.h"
-
+#import "UIViewController+HUD.h"
+#import "EMSDK.h"
+#import "EaseSDKHelper.h"
 #import "SecurityUtil.h"
 #import "GTMBase64.h"
-
+#import "EaseUI.h"
 #import "NSString+Extend.h"
 #import "PublicTool.h"
 
@@ -67,25 +69,7 @@
 
 //#define kRequestIP @"http://172.8.1.160:8080/mobile"
 
-
-//#define kRequestIP @"https://test.mandianfu.com.cn/mobile"
-//#define kRequestIP @"https://m1.mandianfu.com.cn/mobile"
-
 #define kRequestIP @"https://m.mandianfu.com.cn/mobile"
-
-//#ifdef DEBUG
-//#define kRequestIP @"https://m1.mandianfu.com.cn/mobile"
-//#else
-//#define kRequestIP @"https://m1.mandianfu.com.cn/mobile"
-//#endif
-
-//邀请投资访问路径
-#define kInviteIP  @"https://h.mandianfu.com.cn/register/"
-
-//支付请求路径
-#define kPayRequestIP @"http://test.mandianfu.com.cn/mobile/post.html"
-//#define kPayRequestIP  @"http://m1.mandianfu.com.cn:181/post.html"
-//#define kPayRequestIP @"http://h.mandianfu.com.cn/post.html"
 
 #import "NJKWebViewProgress.h"
 #import "NJKWebViewProgressView.h"

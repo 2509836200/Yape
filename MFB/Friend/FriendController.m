@@ -8,8 +8,10 @@
 
 #import "FriendController.h"
 
-@interface FriendController ()
-
+@interface FriendController ()<UITableViewDelegate ,UITableViewDataSource>
+{
+    UITableView *_tableView;
+}
 @end
 
 @implementation FriendController
@@ -18,7 +20,29 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.title = @"好友";
-    self.view.backgroundColor =[UIColor redColor];
+    self.view.backgroundColor =[UIColor whiteColor];
+    
+    _tableView =[[UITableView alloc]initWithFrame:self.view.bounds style:UITableViewStyleGrouped];
+    _tableView.delegate =self;
+    _tableView.dataSource = self;
+    _tableView.tableFooterView = [[UIView alloc]init];
+    [self.view addSubview:_tableView];
+    
+    
+}
+-(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
+    return 1;
+}
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return 1;
+}
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    static NSString *indent =@"cell";
+    UITableViewCell *cell =[tableView dequeueReusableCellWithIdentifier:indent];
+    if(!cell){
+        cell =[[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:indent];
+    }
+    return cell;
 }
 
 - (void)didReceiveMemoryWarning {

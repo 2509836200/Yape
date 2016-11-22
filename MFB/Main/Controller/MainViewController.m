@@ -245,7 +245,7 @@
    
     GroupChatController *groupVC =[[GroupChatController alloc] init];
     UINavigationController *nav4 =[[UINavigationController alloc] initWithRootViewController:groupVC];
-    nav3.delegate = self;
+    nav4.delegate = self;
     [self addChildViewController:nav4];
     // 4.初始化执行第一个控制器
     [self selectedControllerAtIndex:0];

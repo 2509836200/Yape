@@ -116,22 +116,58 @@
         [[NSUserDefaults standardUserDefaults]synchronize];
     }
         
+   
     
-    NSUserDefaults *userDefaults=[NSUserDefaults standardUserDefaults];
-    NSString *sessionId=[userDefaults objectForKey:@"sessionId"];
-    NSString *nameAccount = [userDefaults objectForKey:@"PhoneText"];
-    //在登录状态下
-    if (self.window.rootViewController!=guideCtrl) {
-        if (IS_NOT_EMPTY(nameAccount) && IS_NOT_EMPTY(sessionId)){
-            BOOL beBreak=[defualt boolForKey:@"beBreak"];
-            if (beBreak) {
-                [self authenticationView];
+       //集成环信 SDK
+    //#warning 初始化环信SDK，详细内容在AppDelegate+EaseMob.m 文件中
+    //#warning SDK注册 APNS文件的名字, 需要与后台上传证书时的名字一一对应
+    NSString *apnsCertName = nil;
+#if DEBUG
+    apnsCertName = @"oa_develop";
+#else
+    apnsCertName = @"oa_production";
+#endif
+    
+    NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
+    NSString *oaAppkey = [ud stringForKey:@"oa_identifier_appkey"];
+    if (!oaAppkey) {
+        oaAppkey = @"751420597#yape";
+        [ud setObject:oaAppkey forKey:@"oa_identifier_appkey"];
+    }
+    [[EaseSDKHelper shareHelper] hyphenateApplication:application
+                        didFinishLaunchingWithOptions:launchOptions
+                                               appkey:oaAppkey
+                                         apnsCertName:apnsCertName
+                                          otherConfig:@{kSDKConfigEnableConsoleLogger:[NSNumber numberWithBool:YES]}];
+    
+    
+    EMOptions *options = [EMOptions optionsWithAppkey:oaAppkey];
+    //options.apnsCertName = apnsCertName;
+    options.isAutoAcceptGroupInvitation = YES;
+    [[EMClient sharedClient] initializeSDKWithOptions:options];
+    
+    if ([[EMClient sharedClient] isConnected] != YES)
+    {
+        static dispatch_once_t onceToken;
+        dispatch_once(&onceToken, ^{
+            EMError *error1 = [[EMClient sharedClient] registerWithUsername:@"18310249052" password:@"18310249052"];
+        });
+        BOOL isAutoLogin = [EMClient sharedClient].options.isAutoLogin;
+        if(!isAutoLogin){
+            EMError *error = [[EMClient sharedClient] loginWithUsername:@"18310249052" password:@"18310249052"];
+            if (!error)
+            {
+                NSLog(@"登录成功");
+                //SDK 中自动登录属性默认是关闭的，需要您在登录成功后设置，以便您在下次 APP启动时不需要再次调用环信登录，并且能在没有网的情况下得到会话列表。
+                [[EMClient sharedClient].options setIsAutoLogin:YES];
+                
+                [[NSNotificationCenter defaultCenter] postNotificationName:@"EaseLoginSuccess" object:nil];
             }
-        }else{
-            
+  
         }
     }
 
+ //__________________________________________________
     //集成友盟的相关功能
     [self connectUM];
     
@@ -291,8 +327,15 @@
 {
     return  [UMSocialSnsService handleOpenURL:url];
 }
-
-
+//进入后台
+-(void)applicationDidEnterBackground:(UIApplication *)application{
+    
+    [[EMClient sharedClient] applicationDidEnterBackground:application];
+}
+//进入前台
+-(void)applicationWillEnterForeground:(UIApplication *)application{
+    [[EMClient sharedClient] applicationWillEnterForeground:application];
+}
 - (void)applicationDidBecomeActive:(UIApplication *)application {
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
 

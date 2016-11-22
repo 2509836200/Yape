@@ -602,8 +602,6 @@
     //序列化response
     manager.responseSerializer =[AFJSONResponseSerializer serializerWithReadingOptions:NSJSONReadingMutableContainers];
     
-    
-    
     NSURLSessionDataTask *task = nil;
     
     //GET请求, 设置参数
