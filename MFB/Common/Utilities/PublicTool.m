@@ -26,10 +26,10 @@
 {
     UIImageView *imageView = (UIImageView *)[superView viewWithTag:tag];
     if (!imageView) {
+        imageView = [[UIImageView alloc] initWithFrame:frame];
         if (imageStr) {
             imageView.image = [UIImage imageNamed:imageStr];
         }
-        imageView = [[UIImageView alloc] initWithFrame:frame];
         imageView.tag = tag;
         [superView addSubview:imageView];
     }
