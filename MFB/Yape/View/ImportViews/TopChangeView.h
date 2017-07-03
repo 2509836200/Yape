@@ -10,11 +10,10 @@
 
 typedef void(^ChangeViewBlock)(NSInteger index);
 @interface TopChangeView : UIView
-@property (nonatomic, strong)UIColor *selectedColor;
-@property (nonatomic, strong)UIColor *unSelectedColor;
+
 @property (nonatomic, strong)ChangeViewBlock changeViewBlock;
 @property (nonatomic, assign)NSInteger selectedIndex;
 
--(instancetype)initWithFrame:(CGRect)frame andTitlesArray:(NSArray<NSString *>*)titlesArray;
+-(instancetype)initWithFrame:(CGRect)frame andTitlesArray:(NSArray<NSString *>*)titlesArray selectedColor:(UIColor *)selectedColor unSelectedColor:(UIColor *)unSelectedColor selectedIndex:(NSInteger)selectedIndex;//selectedIndex默认选择的index
 
 @end

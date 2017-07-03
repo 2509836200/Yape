@@ -10,42 +10,40 @@
 
 @interface TopChangeView ()
 @property (nonnull, strong)NSMutableArray *itemsArray;
+@property (nonatomic, strong)UIColor *selectedColor;
+@property (nonatomic, strong)UIColor *unSelectedColor;
 @end
 @implementation TopChangeView
 
--(UIColor *)selectedColor
+-(instancetype)initWithFrame:(CGRect)frame andTitlesArray:(NSArray<NSString *>*)titlesArray selectedColor:(UIColor *)selectedColor unSelectedColor:(UIColor *)unSelectedColor selectedIndex:(NSInteger)selectedIndex
 {
-    if (!_selectedColor) {
-        _selectedColor = [UIColor blackColor];
-    }
-    return _selectedColor;
-}
-
--(UIColor *)unSelectedColor
-{
-    if (!_unSelectedColor) {
-        _unSelectedColor = [UIColor whiteColor];
-    }
-    return _unSelectedColor;
-}
-
--(instancetype)initWithFrame:(CGRect)frame andTitlesArray:(NSArray<NSString *>*)titlesArray
-{
+    
     self = [super initWithFrame:frame];
     if (self) {
-        [self creatItemUIWithTitlesArray:titlesArray];
+        self.selectedColor = selectedColor;
+        self.unSelectedColor = unSelectedColor;
+        [self creatItemUIWithTitlesArray:titlesArray selectedIndex:selectedIndex];
+       
     }
     return self;
 }
 
--(void)creatItemUIWithTitlesArray:(NSArray *)titlesArray
+-(void)creatItemUIWithTitlesArray:(NSArray *)titlesArray selectedIndex:(NSInteger)selectedIndex
+
 {//self和所有item所需要的width相等
     self.itemsArray = [NSMutableArray array];
     CGFloat itemWidth = self.frame.size.width/4.0;
     int i = 0;
     for (NSString *title in titlesArray) {
-        UIButton *item = [PublicTool initButtonWithFrame:CGRectMake(0 + itemWidth*i, 5, itemWidth, 40) text:title font:[UIFont systemFontOfSize:15] normalTextColor:self.selectedColor normalBgColor:self.unSelectedColor tag:141 + i superView:self target:self action:@selector(changeView:)];
+                UIButton *item = [PublicTool initButtonWithFrame:CGRectMake(0 + itemWidth*i, 5, itemWidth, 40) text:title font:[UIFont systemFontOfSize:15] normalTextColor:self.selectedColor normalBgColor:self.unSelectedColor tag:141 + i superView:self target:self action:@selector(changeView:)];
+        item.layer.borderWidth = 2;
+        item.layer.borderColor =  self.selectedColor.CGColor;
         [self.itemsArray addObject:item];
+        if (selectedIndex == i) {
+            [item setTitleColor:self.unSelectedColor forState:UIControlStateNormal];
+            [item setBackgroundColor:self.selectedColor];
+        }
+
         i++;
     }
 }
